@@ -1,0 +1,4 @@
+//Code for counting the number of characters 计算字符数
+var message = prompt("Compose your message:"); //write your message 写一下你的信息
+var messageCount = message.length;
+alert("You have written " + messageCount + " characters, you have " + (140-messageCount) + " characters remaining.");
