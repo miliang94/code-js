@@ -1,0 +1,15 @@
+function isLear(year) {
+    if (year % 4 === 0) {
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
+                return "Leap year"; //is divisible by 400
+            } else {
+                return "Not leap year"; //not divisible by 400
+            }
+        } else {
+            return "Leap year";
+        }
+    } else {
+        return "Not leap year";
+    }
+} //end function
