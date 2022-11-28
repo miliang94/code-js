@@ -1,3 +1,2 @@
-# code-js
-
-Javascript coding examples
+# Javascript
+Coding examples
