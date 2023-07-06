@@ -1,2 +1,2 @@
 # Javascript
-Coding examples
+Coding examples / 编码例子
