@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>24-hour Clock</title>
+  </head>
+  <body>
+    <script>
+      const hour = '18'; //create variable called 'hour' and save current hour of the day in 24-hour format
+
+      if (hour >= 6 && hour <= 12) {
+        console.log('Good morning'); //display 'Good morning' if hour is between 6 and 12
+      } else if (hour >= 13 && hour <= 17) {
+        console.log('Good afternoon'); //display 'Good afternoon' if hour is between 13 and 17
+      } else {
+        console.log('Good night'); //otherwise display 'Good night' for every other time, between 18 and 5
+      }
+    </script>
+  </body>
+</html>
