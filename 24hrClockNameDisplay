@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>24-hour Clock</title>
+  </head>
+  <body>
+    <script>
+      const hour = 18; //create variable called 'hour' and save current hour of the day in 24-hour format
+      const name = 'Hamish'; //save name inside string variable to display in messages below
+
+      if (hour >= 6 && hour <= 12) {
+        console.log(`Good morning ${name}`); //if hour is between 6 and 12
+      } else if (hour >= 13 && hour <= 17) {
+        console.log(`Good afternoon ${name}`); //if hour is between 13 and 17
+      } else {
+        console.log(`Good night ${name}`); //or every other time
+      }
+    </script>
+  </body>
+</html>
