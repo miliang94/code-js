@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      function greet(name) { //add parameter called name
+        if (!name) {
+          console.log('Hi there'); //if name is undefined when function is called, console will say this by default
+        } else {
+          console.log(`Hello ${name}`);
+        }
+      }
+      greet('Hamish'); //displays 'Hello Hamish'
+      greet(); //displays 'Hi there' as no name is inside the brackets
+    </script>
+  </body>
+</html>
