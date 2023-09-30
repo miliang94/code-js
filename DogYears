@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dog Years</title>
+  </head>
+  <body>
+    <script>
+      var dogAge = prompt("How old is your dog?"); //prompts user to enter value
+      humanAge = ((dogAge-2)*4)+21; //although the second set of brackets is not necessary, it makes the code abundantly clear the order of which the calculations will take place
+      alert("Your dog is " + humanAge + " years old in human years");
+    </script>
+  </body>
+</html>
