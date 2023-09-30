@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Limit Number of Characters</title>
+  </head>
+  <body>
+    <script>
+      //Code for limiting the number of characters 限制字符数
+      var message = prompt("Compose your message"); //write your message 写一下你的消息
+      var messageUnder140 = message.slice(0,140);
+      alert(messageUnder140);
+      //OR (works exactly the same as the code above)
+      //alert(prompt("Compose your message").slice(0,140));
+    </script>
+  </body>
+</html>
