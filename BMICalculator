@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI</title>
+  </head>
+  <body>
+    <script>
+      function bmiCalculator(weight, height) {
+        //Instead of saying (height*height), an alternative method below also works:
+        var bmi = weight / Math.pow(height, 2); //pow stands for 'power' while '2' is the exponent, i.e. height squared
+        return Math.round(bmi);
+      }
+      var bmi = bmiCalculator(75, 1.8); //values already entered
+      console.log(bmi);
+    </script>
+  </body>
+</html>
