@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Celsius to Fahrenheit</title>
+  </head>
+  <body>
+    <script>
+      let degreesC = 30;
+      let degreesF = 0;
+
+      degreesF = (degreesC * 9 / 5) + 32;
+      console.log('The temperature in degrees Fahrenheit is: ' + degreesF);
+    </script>
+  </body>
+</html>
