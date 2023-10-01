@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fahrenheit to Celsius</title>
+  </head>
+  <body>
+    <script>
+      let degreesF = 60;
+      let degreesC = 0;
+
+      degreesC = (degreesF - 32) * 5 / 9;
+      console.log(`The temperature in degrees Celsius is: ${Math.round(degreesC)}`); //convert celsius value to whole number
+    </script>
+  </body>
+</html>
