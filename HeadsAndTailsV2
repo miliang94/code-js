@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heads and Tails</title>
+  </head>
+  <body>
+    <button onclick="playGame('Heads')">Heads</button>
+    <button onclick="playGame('Tails')">Tails</button>
+    <button onclick="
+    score.wins = 0;
+    score.losses = 0;
+    localStorage.removeItem('score');
+    console.log('Score reset');
+    ">Reset Score</button>
+    <script>
+      //Get string out of local storage - loads scored saved from last time before browser is refreshed as a JSON string
+      //Convert back to object
+      //Use score from local storage instead of resetting to 0 every time browser is refreshed
+      //As score is a reference, we can use const here. This allows it to be modified even if const is used
+      const score = JSON.parse(localStorage.getItem('score')) || { //gets score if truthy
+        wins: 0,
+        losses: 0
+      };
+
+      function playGame(guess) {
+        const randomNumber = Math.random();
+        const result = randomNumber < 0.5 ? 'Heads' : 'Tails';
+        console.log(guess === result ? 'You win' : 'You lose');
+
+        //Adds to score
+        if (guess === result) {
+          score.wins++;
+        } else {
+          score.losses++;
+        } //end if
+
+        //Save score in local storage, use JSON to convert JS 'score' object to string as local storage does not accept non-string values
+        localStorage.setItem('score', JSON.stringify(score));
+
+        //Display the result in console
+        console.log(`Wins: ${score.wins}. Losses: ${score.losses}`)
+      } //end function
+      console.log(score);
+    </script>
+  </body>
+</html>
